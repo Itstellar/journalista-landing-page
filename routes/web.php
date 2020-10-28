@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','WebController@index');
 Route::get('/contact','WebController@contact');
-
+Route::post('/', 'WebController@Newsletter');
+Route::Post('/contact', 'WebController@SendMail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

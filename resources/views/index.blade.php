@@ -148,18 +148,34 @@
                     <h2>Experience the most simple way to <br>
                         manage business</h2>
                     <div class="subscribe_form">
-                        <form action="#">
+                        <form method="post" action="{{url('/')}}">
+                            @csrf
                             <div class="form-row">
                                 <div class="col-sm-9">
-                                    <input type="email" class="form-control" placeholder="enter your email">
+                                    <input type="email" class="form-control" name="email" placeholder="enter your email" required>
+                                    @if ($errors->has('email'))
+                                        <span class="help-block text-danger">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                         </span>
+                                    @endif
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="subscribe_btn">
-                                        <div class="btn_2 d-block">free trail</div>
+                                        <button type="submit" class="btn_2 d-block">free trail</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        @if (Session::has('success'))
+                            <div class="alert alert-success">
+                                <p>{{ Session::get('success') }}</p>
+                            </div><br />
+                        @endif
+                        @if (Session::has('failure'))
+                            <div class="alert alert-danger">
+                                <p>{{ Session::get('failure') }}</p>
+                            </div><br />
+                        @endif
                     </div>
                 </div>
             </div>

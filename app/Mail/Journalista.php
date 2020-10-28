@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Http\Request;
 
-class ItStellar extends Mailable
+class Journalista extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -32,7 +32,7 @@ class ItStellar extends Mailable
     {
 
         $email=$request->email;
-        return $this->Subject("ItStellar(Contact_Us)")->view('mail',['comment'=>$request->comment,'Subject'=>$request->subject,'name'=>$request->name,
+        return $this->Subject("Journalista(Contact_Us)")->view('mail',['comment'=>$request->comment,'Subject'=>$request->subject,'name'=>$request->name,
             'email'=>$request->email])->to("asmaa@efficoat.com")->from("$email");
 
     }
