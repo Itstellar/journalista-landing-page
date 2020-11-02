@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'mailtrap.io'),
             'port' => env('MAIL_PORT', 2525),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => '0ec380d235db41',
+            'username' => '',
             'password' => '10b6ef73f78f9b',
             'timeout' => null,
             'auth_mode' => null,
