@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="{{setting('site.keywords')}}">
     <meta name="description" content="{{setting('site.description')}}">
-    <link rel="icon" href="{{asset('/web')}}/img/favicon.png">
+    <link rel="icon" href="{{asset('/web')}}/img/logo.jpg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('/web')}}/css/bootstrap.min.css">
     <!-- animate CSS -->
