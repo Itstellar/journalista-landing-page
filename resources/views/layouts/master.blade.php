@@ -74,8 +74,8 @@
             <div class="col-sm-8 col-md-4 col-lg-4">
                 <div class="single_footer_part">
                     <a href="index.html" class="footer_logo_iner"> <img src="{{ Voyager::image( setting('site.logo') ) }}" alt="#"> </a>
-                    <p>Gathered. Under is whose you'll to make years is mat lights thing together fish made
-                        forth thirds cattle behold won't. Fourth creeping first female.
+                    <p>16192 COASTAL HIGHWAY
+LEWES, DELAWARE 19958-9776
                     </p>
                 </div>
             </div>
