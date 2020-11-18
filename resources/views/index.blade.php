@@ -140,49 +140,7 @@
 <!--::about_us part end::-->
 
 <!--::subscribe us part end::-->
-<section class="subscribe_part padding_bottom">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="subscribe_part_text text-center">
-                    <h2>Experience the most simple way to <br>
-                        manage business</h2>
-                    <div class="subscribe_form">
-                        <form method="post" action="{{url('/')}}">
-                            @csrf
-                            <div class="form-row">
-                                <div class="col-sm-9">
-                                    <input type="email" class="form-control" name="email" placeholder="enter your email" required>
-                                    @if ($errors->has('email'))
-                                        <span class="help-block text-danger">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                         </span>
-                                    @endif
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="subscribe_btn">
-                                        <button type="submit" class="btn_2 d-block">free trail</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        @if (Session::has('success'))
-                            <div class="alert alert-success">
-                                <p>{{ Session::get('success') }}</p>
-                            </div><br />
-                        @endif
-                        @if (Session::has('failure'))
-                            <div class="alert alert-danger">
-                                <p>{{ Session::get('failure') }}</p>
-                            </div><br />
-                        @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <img src="{{asset('/web')}}/img/animate_icon/Ellipse_5.png" alt="" class="feature_icon_2 custom-animation2">
-</section>
+
 <!--::subscribe us part end::-->
 
 <!--::client logo part end::-->
